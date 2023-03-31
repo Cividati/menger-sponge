@@ -1,5 +1,6 @@
 # Menger Sponge Unity Project
 ![](img/menger.gif)
+
 Este é um projeto do Menger Sponge desenvolvido no Unity. O objetivo do projeto é demonstrar as propriedades matemáticas e visuais da esponja de Menger em um ambiente virtual 3D.
 
 ## Como usar
