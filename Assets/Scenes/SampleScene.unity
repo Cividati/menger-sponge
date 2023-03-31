@@ -451,6 +451,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae49af635d909714bbbe977401df2c51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moveToPosition: {x: 0, y: 0, z: 200}
 --- !u!1 &2094534396
 GameObject:
   m_ObjectHideFlags: 0
