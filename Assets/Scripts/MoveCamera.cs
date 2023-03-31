@@ -7,7 +7,7 @@ public class MoveCamera : MonoBehaviour
     // Start is called before the first frame update
     /* Variables */
     Camera camera;
-    Vector3 moveToPosition; // This is where the camera will move after the start
+    public Vector3 moveToPosition; // This is where the camera will move after the start
     float speed = 0.1f; // this is the speed at which the camera moves
     
     /* functions */

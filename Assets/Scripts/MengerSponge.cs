@@ -13,7 +13,7 @@ public class MengerSponge : MonoBehaviour
     void Start() {
         GameObject go = Instantiate(prefab, new Vector3(0, 0, 0), Quaternion.identity);
         go.transform.localScale = new Vector3(size, size, size);
-        go.GetComponent<MengerBox>().size = size;
+        go.GetComponent<Cube>().size = size;
         cubes.Add(go);
     }
 
@@ -33,7 +33,7 @@ public class MengerSponge : MonoBehaviour
     List<GameObject> Split(List<GameObject> cubes) {
         List<GameObject> subCubes = new List<GameObject>();
         foreach(var cube in cubes){
-            float size = cube.GetComponent<MengerBox>().size;
+            float size = cube.GetComponent<Cube>().size;
             for (int x =-1; x < 2; x++){
                 for (int y =-1; y<2; y++){
                     for(int z=-1; z<2; z++){
@@ -47,7 +47,7 @@ public class MengerSponge : MonoBehaviour
                         
                         if (sum > 1){
                             GameObject copy = Instantiate(cube, cubePos, Quaternion.identity);
-                            copy.GetComponent<MengerBox>().size = size / 3f;
+                            copy.GetComponent<Cube>().size = size / 3f;
                             copy.transform.localScale = new Vector3(size / 3f, size / 3f, size / 3f);
 
                             subCubes.Add(copy);
@@ -57,5 +57,14 @@ public class MengerSponge : MonoBehaviour
             }
         }
         return subCubes;
+    }
+
+    public void RemoveObjectFromList(GameObject o) {
+        if(cubes.Contains(o)){
+            cubes.Remove(o);
+            //Destroy(o);
+            }
+            else return ;
+        print("cubes count: "+cubes.Count.ToString());
     }
 }

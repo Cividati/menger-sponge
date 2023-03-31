@@ -24,10 +24,12 @@ public class InCameraDetector : MonoBehaviour
         cameraFrustum = GeometryUtility.CalculateFrustumPlanes(camera);
         if(GeometryUtility.TestPlanesAABB(cameraFrustum, bounds)){
             
-            renderer.gameObject.GetComponent<MeshRenderer>().enabled = true;
+            //renderer.gameObject.GetComponent<MeshRenderer>().enabled = true;
         } else {
-
-            renderer.gameObject.GetComponent<MeshRenderer>().enabled = false;
+            
+            Destroy(renderer.gameObject);
+            //renderer.gameObject.GetComponent<MengerSponge>().RemoveObject(renderer.gameObject);
+            
             
         }
     }
