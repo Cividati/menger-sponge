@@ -29,4 +29,4 @@ Se você quiser contribuir para o projeto, siga as instruções abaixo:
 Este projeto é distribuído sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
 
 ## Autores
-Ruebns Cividati - Desenvolvedor do projeto.
+Rubens Cividati - Desenvolvedor do projeto.
