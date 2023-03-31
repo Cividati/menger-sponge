@@ -1,7 +1,7 @@
 # Menger Sponge Unity Project
 ![](img/menger.gif)
 
-Este é um projeto do Menger Sponge desenvolvido no Unity. O objetivo do projeto é demonstrar as propriedades matemáticas e visuais da esponja de Menger em um ambiente virtual 3D.
+Este projeto é uma demonstração visual e interativa da esponja de Menger, um fractal tridimensional descoberto pelo matemático alemão Karl Menger em 1926. Desenvolvido no Unity, o projeto permite que os usuários explorem as propriedades matemáticas da esponja de Menger em um ambiente virtual 3D. Os usuários podem ajustar os parâmetros do gerador de esponjas para criar esponjas de diferentes níveis de detalhe e complexidade. O projeto é um excelente recurso educacional para estudantes de matemática e programação, bem como para qualquer pessoa interessada em fractais e gráficos computacionais avançados.
 
 ## Como usar
 Para executar o projeto, siga as seguintes instruções:
